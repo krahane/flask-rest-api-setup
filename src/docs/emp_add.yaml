@@ -1,0 +1,29 @@
+To add employee
+---
+tags:
+  - Employee
+description: "This is a simple API to add employee"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+parameters:
+- in: "body"
+  name: "body"
+  description: "Accepts a input dictionary of emp"
+  required: "true"
+  schema:
+    type: "object"
+    properties:
+      order:
+        type: "object"
+    example: {'id': 1, 'name': 'abc', 'email': 'abc@gmail.com', 'salary': '50k', 'designation':'SE'}
+ 
+responses:
+  200:
+    description: "Success"
+    schema:
+      type: "object"
+      properties:
+        data:
+          type: "object"

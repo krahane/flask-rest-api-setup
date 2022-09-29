@@ -1,0 +1,17 @@
+To fetch all employees
+---
+tags:
+  - Employee
+produces:
+- "application/json"  
+
+responses:
+  200:
+    description: "Success"
+    schema:
+      type: "object"
+      properties:
+        data:
+          type: "object"
+  404:
+    description: Record was not found

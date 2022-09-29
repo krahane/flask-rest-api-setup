@@ -1,0 +1,19 @@
+To delete employee details
+---
+tags:
+  - Employee 
+parameters:
+- in: "path"
+  name: "id"
+  description: "Accepts id of employee"
+  required: "true"
+responses:
+  200:
+    description: "Success"
+    schema:
+      type: "object"
+      properties:
+        data:
+          type: "object"
+  404:
+    description: Record was not found
